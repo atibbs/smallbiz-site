@@ -1,0 +1,236 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+<!-- Facebook plugin -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <div class="wrapper">  
+    <div id="toolbar">
+      <div class="tb-wrap">
+
+        <ul id="tb-nav">
+          <li>
+           <img src="img/phone.png" alt="telephone icon"> (503) 510-5654
+          </li>
+          <li><a href="#">Hours of Operation <img src="img/btn-down.png" alt="Click to Expand"></a>
+            <ul class="tb-dropdown">
+              <li>Monday - Friday: 8:00am - 9:00pm</li>
+              <li>Saturday &amp; Sunday: Closed</li>
+            </ul>
+          </li>
+        </ul>
+
+      </div><!-- /.tb-wrap -->
+    </div><!-- /#toolbar -->
+
+    <header class="header">
+        <a href="#" class="logo">
+          <img src="img/logo.png" alt="Default Logo">
+        </a>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="menu.html">Menus</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <div class="clearfix"></div>
+
+    <div id="main" role="main">
+      <section id="featured">
+        <article class="item-1">
+          <a href="menu.html">
+            <img src="http://placehold.it/640x416" alt="placeholder">
+            <span>Check out our amazing specials &raquo;</span>
+          </a>
+        </article>
+        <article class="item-2">
+          <a href="contact.html">
+            <img src="http://placehold.it/320x208" alt="placeholder">
+            <span>Make a Reservation &raquo;</span>
+          </a>          
+        </article>
+        <article class="item-3">
+          <a href="contact.html">
+            <img src="http://placehold.it/320x208" alt="placeholder">
+            <span>Get directions &raquo;</span>
+          </a>   
+        </article>
+
+      </section><!-- /#featured -->
+    
+      <div class="clearfix"></div>
+    
+      <section id="info-cols">
+        <article class="col-1">
+          <h3 class="col-leed">Twitter</h3>
+          <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+            new TWTR.Widget({
+              version: 2,
+              type: 'profile',
+              rpp: 3,
+              interval: 30000,
+              width: 300,
+              height: 300,
+              theme: {
+                shell: {
+                  background: '#1a1919',
+                  color: '#bcbcbc'
+                },
+                tweets: {
+                  background: '#1a1919',
+                  color: '#bcbcbc',
+                  links: '#5d5d5d'
+                }
+              },
+              features: {
+                scrollbar: false,
+                loop: false,
+                live: false,
+                behavior: 'all'
+              }
+            }).render().setUser('inDowntownPDX').start();
+            </script>
+        </article>
+
+        <article class="col-2">
+          <h3 class="col-leed">Updates</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt suscipit tellus, non gravida nisl dictum quis. Vivamus sit amet leo vel odio convallis placerat. Curabitur in pulvinar libero. Vestibulum elementum feugiat nisi ut lobortis.</p>
+        </article>
+
+        <article class="col-3">
+          <h3 class="col-leed">Find Us</h3>
+          <p><iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=portland+or&amp;aq=&amp;sll=45.540466,-122.660841&amp;sspn=0.00505,0.011362&amp;ie=UTF8&amp;hq=&amp;hnear=Portland,+Multnomah,+Oregon&amp;t=m&amp;ll=45.523428,-122.676172&amp;spn=0.012027,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=portland+or&amp;aq=&amp;sll=45.540466,-122.660841&amp;sspn=0.00505,0.011362&amp;ie=UTF8&amp;hq=&amp;hnear=Portland,+Multnomah,+Oregon&amp;t=m&amp;ll=45.523428,-122.676172&amp;spn=0.012027,0.025663&amp;z=14&amp;iwloc=A" target="_blank">View Larger Map</a></small></p>
+          <p>123 Street<br />
+          Portland, OR 97209</p>
+        </article>
+
+      </section><!-- /#info-cols -->
+
+      <div class="clearfix"></div>
+
+    </div><!-- /#main -->
+    <div class="push"></div>
+  </div> <!-- /#wrapper -->
+
+    <footer class="footer">
+    
+      
+      <div class="footer-wrap">
+
+        <div class="left-col">
+          <h2>Friend us on Facebook</h2>
+          <div class="fb-like-box" data-href="https://www.facebook.com/thedailyshow" data-width="385" data-height="185" data-show-faces="true" data-border-color="#e8e8e8" data-stream="false" data-header="false"></div>
+        </div>
+        <div class="right-col">
+          <h2>Sign up for our newsletter</h2>
+          <form>
+            <input type="email" name="newsletter" placeholder="Please enter your email address" class="email" />
+            <input type="submit" value="Sign Up" class="submit"/>
+          </form>
+          <div id="footer-nav">
+            <ul>
+              <li><a href="tou.html">Terms of Use</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <p class="legal">Copyright &copy; 2012, Company Name. All rights reserved.</p>
+        </div>
+      </div><!-- /.footer-wrap -->
+    </footer>
+
+
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() {     
+      $('.tb-dropdown').hide();
+      $('#tb-nav li a').on('click', function() {
+        $('.tb-dropdown').toggle();
+      });
+    });
+  </script>
+  
+  <!--<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>-->
+
+
+  <!-- scripts concatenated and minified via ant build script
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>-->
+  <!-- end scripts-->
+
+	
+  <!-- Change UA-XXXXX-X to be your site's ID 
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>-->
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
